@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="My Account"  android:icon="@drawable/ic_account_circle_black_24dp">
+            <menu>
+                <item android:title="View Profile"></item>
+                <item android:title="Setting"></item>
+            </menu>
+        </item>
+        <item android:title="Products" android:icon="@drawable/ic_icons8_box" android:id="@+id/nav_products"></item>
+        <item android:title="Customers" android:icon="@drawable/ic_icons8_client_management_64_" android:id="@+id/nav_customers"></item>
+        <item android:title="Statistics-Reports" android:icon="@drawable/ic_icons8_business_report_80" android:id="@+id/nav_reports"></item>
+        <item android:title="About" android:icon="@drawable/ic_info_black_24dp" android:id="@+id/nav_about"></item>
+        <item android:title="Logout" android:id="@+id/nav_logout"></item>
+        <item android:id="@+id/menu_none" android:title="" android:visible="false"/>
+
+    </group>
+</menu>

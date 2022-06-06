@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightgreybackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adding a manager to shop"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/shopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="shopname" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Employee title" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start of contract"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lightgreybackground"
+                        android:src="@drawable/ic_date_range_black_24dp"
+                        android:id="@+id/startOfContractChooser"
+                        />
+                    <EditText
+                        android:id="@+id/add_manager_start_of_contract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Start of contract Date" />
+
+                </TableRow>
+
+
+                <TableRow android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End of Contract"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <!--
+                    <EditText
+                        android:id="@+id/add_manager_end_of_contract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="End of contract Date" />
+
+                    -->
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lightgreybackground"
+                        android:src="@drawable/ic_date_range_black_24dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="First Name" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Last Name" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Identity"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_identity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Identity number" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Address" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:hint="Gender" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/genderSpinnerItems" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile phone"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_mobile_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Mobile phone" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home phone"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_home_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Home phone" />
+
+
+                </TableRow>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Username" />
+
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Password" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primary email"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_primary_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Primary Email" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secondary email"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/add_manager_secondary_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Secondary email" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <Button
+                android:id="@+id/btn_add_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

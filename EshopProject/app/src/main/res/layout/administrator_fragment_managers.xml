@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/shop_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusedByDefault="false"
+            android:spinnerMode="dialog">
+
+        </Spinner>
+
+        <ListView
+            android:id="@+id/managers_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/colorPrimaryDark" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/manager_add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add_black_24dp"
+        />
+
+
+</RelativeLayout>

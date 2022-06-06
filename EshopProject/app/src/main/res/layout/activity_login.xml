@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/usernameET"
+                android:background="@drawable/textbox_back"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="Username"
+                android:textColorHint="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/passwordET"
+                android:background="@drawable/textbox_back"
+                android:hint="Password"
+                android:textColorHint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+
+                android:inputType="textPassword"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"
+                android:background="#0000"
+                android:id="@+id/show_password_button"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/login_button_back"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFF"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_error"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

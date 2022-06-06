@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightgreybackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRODUCT INFORMATION"
+                android:textSize="20dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/cardview_light_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product title"
+                            android:textSize="20dp"
+                            android:textColor="@color/cardview_dark_background"/>
+
+                        <EditText
+                            android:id="@+id/manager_add_product_product_title"
+                            android:layout_width="20mm"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="Product Title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product cost"
+                            android:textSize="20dp"
+                            android:textColor="@color/cardview_dark_background"/>
+
+                        <EditText
+                            android:id="@+id/manager_add_product_product_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Product cost"
+
+                            android:inputType="numberDecimal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product image"
+                            android:textSize="20dp"
+                            android:textColor="@color/cardview_dark_background"/>
+
+                        <ImageButton
+                            android:id="@+id/manager_product_attachment_button"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:background="#0000"
+                            android:src="@drawable/ic_add_a_photo_black_24dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category"
+                            android:textSize="20dp"
+                            android:textColor="@color/cardview_dark_background"/>
+
+                        <Spinner
+                            android:id="@+id/categories_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/add_product_imageFL"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <ImageView
+                            android:id="@+id/manager_add_product_uploaded_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/round_outline"
+                            android:visibility="visible" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="-10dp"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/ic_cancel_black_24dp"
+                            android:visibility="visible" />
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/manager_add_product_button"
+                android:layout_width="20mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/styledbutton"
+                android:text="SAVE" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

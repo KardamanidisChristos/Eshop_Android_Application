@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="25dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="20dp">
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/ic_image_black_24dp"
+           android:id="@+id/product_image"/>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_toRightOf="@id/product_image"
+           android:layout_toEndOf="@id/product_image"
+           android:layout_marginLeft="10dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/product_tv"
+               android:text="Title"
+               android:textSize="40dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/descriptionTv"
+               android:text="Cost"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/serialCodeTv"
+               android:text="Serial Code : -"/>
+
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
